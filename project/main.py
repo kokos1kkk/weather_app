@@ -7,6 +7,7 @@ def get_weather(city):
     
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric&lang=ru'
     
+    a = 1
     response = requests.get(url)
     
     if response.status_code == 200:
